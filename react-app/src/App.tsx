@@ -6,7 +6,7 @@ import Card from "./Components/Card";
 function App() {
     return (
         <div className="App">
-            <Card height="200px" width="200px">
+            <Card onClick={() => console.log("123")} height="200px" width="200px">
                 <div>123</div>
             </Card>
         </div>

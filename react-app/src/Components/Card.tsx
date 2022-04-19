@@ -1,17 +1,21 @@
-import React, {FC} from 'react';
+import React from 'react';
 
 interface CardProps {
     width?: string;
     height?: string;
-    children: React.ReactChild
+    onClick: () => void;
+    children: React.ReactChild;
 }
 
-const Card: FC<CardProps> = ({width, height, children}) => {
+
+const Card: React.FC<CardProps> = ({width, height, children, onClick}) => {
     return (
-        <div style={{width, height, background: "gray"}}>
-            {children}
-        </div>
-    );
+        <div style={{width, height, background: "gray"}} onClick = {onClick} >
+        {children}
+
+</div>
+)
+    ;
 };
 
 export default Card;
