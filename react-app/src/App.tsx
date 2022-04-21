@@ -4,6 +4,7 @@ import './App.css';
 import Card from "./Components/Card";
 import UserList from "./Components/UserList";
 import {IUser} from "./types/types";
+import Events from "./Components/Events";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
                 <div>123</div>
             </Card>
             <UserList users={users}/>
+            <Events/>
         </div>
     );
 }
