@@ -4,9 +4,7 @@ import App from "../App";
 
 const Router = () => {
     return (
-        <Routes>
-            <Route path="/" element={App}/>
-        </Routes>
+        <div></div>
     );
 };
 
